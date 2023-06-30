@@ -1,0 +1,176 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+
+body{
+	
+	max-width: 1600px;
+	width: 100%;
+	padding:0;
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	animation: slide 0.4s;
+	
+}
+
+.container{
+	display:flex;
+
+	gap: 15px;
+	padding: 0 2rem;
+	margin-top: 5rem;
+	
+}
+
+.navContainer{
+	
+	height: 70px;
+	color:white;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: black;
+	
+	
+}
+
+.navList{
+	list-style: none;
+	display:flex;
+	margin-right:8px; 
+	padding:0;
+	margin-right: 15px;
+}
+
+.cart{
+	display:flex; 
+	align-items: center;
+	padding: 0 20px;	
+}
+
+.cartLink:hover{
+	cursor:pointer;
+}
+
+li{
+	padding:0 20px;
+	height: 70px;
+	display:flex;
+	align-items:center;
+	transition: 0.3s box-shadow;
+
+}
+
+
+li:hover{
+	cursor: pointer;
+    box-shadow: inset 0 -5px 0 0 #2F3C7E; 
+}
+
+a{
+	color:white;
+}
+
+@keyframes slide{
+	from{
+		opacity: 0;
+		transform: rotateX(-10deg);
+	}
+	
+	to{
+		opacity: 1;
+		transform: rotateX(0);
+	}
+}
+
+.userContM{
+	
+		
+	height: 400px;
+	
+}
+
+
+.userCont{
+	
+	display:flex;
+	
+}
+
+.userColOne{
+	width:30%;
+	display:flex;
+	flex-direction: column;
+	
+	
+	
+}
+
+.com{
+	padding:2rem;
+}
+
+.inpCom{
+	padding:0 29px;
+}
+
+.userColTwo{
+	width:7	0%;
+	display:flex;
+	flex-direction: column;
+	gap:45px;
+	margin-top:20px;
+	
+}
+
+
+.inpS{
+	padding:10px;
+	width:100%
+}
+
+
+.button-26 {
+  appearance: button;
+  background-color: #1652F0;
+  border: 1px solid #1652F0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  text-decoration: none;
+  margin-left: 115px;
+}
+
+.button-26:disabled {
+  opacity: .5;
+}
+
+.button-26:focus {
+  outline: 0;
+}
+
+.button-26:hover {
+  background-color: #0A46E4;
+  border-color: #0A46E4;
+}
+
+.button-26:active {
+  background-color: #0039D7;
+  border-color: #0039D7;
+}

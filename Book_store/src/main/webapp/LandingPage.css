@@ -1,0 +1,157 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+.navContainer{
+	
+	height: 70px;
+	color:white;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	
+}
+
+body{
+	box-sizing: border-box;
+	padding:0;
+	margin:0 auto;
+	width: 100%;
+	max-width: 1400px;
+	font-family: 'Quicksand', sans-serif;
+	background: url(https://images.pexels.com/photos/3457273/pexels-photo-3457273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  	background-size: cover;
+  	box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+  	height: 100vh;
+  	animation: slide 0.4s;
+	
+	
+}
+
+.ma{
+	
+}
+
+.dialog{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	height: 500px;
+	gap:20px;
+}
+
+.dia1{
+	
+	color:white;
+	font-weight: 20px;
+	font-size:2rem;
+	
+}
+
+@keyframes slide{
+	from{
+		opacity: 0;
+		transform: rotateX(-10deg);
+	}
+	
+	to{
+		opacity: 1;
+		transform: rotateX(0);
+	}
+}
+
+.navList{
+	list-style: none;
+	display:flex;
+	margin-right:8px; 
+	padding:0;
+	margin-right: 15px;
+}
+
+li{
+	padding:0 20px;
+	height: 70px;
+	display:flex;
+	align-items:center;
+	transition: 0.3s box-shadow;
+
+}
+
+
+li:hover{
+	cursor: pointer;
+    box-shadow: inset 0 -5px 0 0 #2F3C7E; 
+}
+
+a{
+	color:white;
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
